@@ -1,0 +1,3 @@
+An Ivy extension that displays the links from the [[https://pinboard.in/popular/][pinboard.in popular page]].
+
+~M-x pinboard-popular~ to populate the ivy minibuffer with the popular links.
