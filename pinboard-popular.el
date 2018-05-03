@@ -1,5 +1,11 @@
 ;;; pinboard-popular.el --- An Ivy extension that displays the links from the pinboard.in popular page.
+;; -*- lexical-binding: t; -*-
 
+;; Adam Simpson <adam@adamsimpson.net>
+;; Version: 0.1.0
+;; Package-Requires: ((ivy "9.0"))
+;; Keywords: pinboard, ivy
+;; URL: https://github.com/asimpson/ivy-pinboard-popular
 
 ;;; Commentary:
 ;; I'm not great at regexes so this code is designed around that limitation.
