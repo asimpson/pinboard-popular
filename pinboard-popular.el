@@ -2,7 +2,8 @@
 ;; -*- lexical-binding: t; -*-
 
 ;; Adam Simpson <adam@adamsimpson.net>
-;; Version: 0.1.0
+;; Version: 0.1.1
+;; Package-Requires: ((loop "1.4"))
 ;; Keywords: pinboard
 ;; URL: https://github.com/asimpson/pinboard-popular
 
@@ -11,6 +12,7 @@
 
 ;;; Code:
 (require 'url)
+(require 'loop)
 
 (defun pinboard-popular--re-capture-between(re-start re-end)
   "Return the string between two regexes."
