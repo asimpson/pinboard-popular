@@ -27,7 +27,7 @@
   (interactive)
   (let ((url "https://pinboard.in/popular/"))
     (url-retrieve url (lambda(_)
-                        (let (links link title)
+                        (let (links link title selection)
                           (keep-lines "bookmark_title" (point-min) (point-max))
                           (loop-for-each-line (progn
                                                 (unless (= (point) (point-max))
@@ -35,7 +35,8 @@
                                                   (setq title (decode-coding-string (substring (pinboard-popular--re-capture-between ">" "<") 0 -1) 'utf-8))
                                                   (push (propertize title 'url link) links))))
 
-                          (browse-url (get-text-property 0 'url (completing-read "Pinboard popular: " (reverse links) nil t))))))))
+                          (setq selection (completing-read "Pinboard popular: " (reverse links) nil t))
+                          (browse-url (get-text-property 0 'url (car (seq-filter (lambda(x) (string= (substring-no-properties x) selection)) links)))))))))
 
 (provide 'pinboard-popular)
 
