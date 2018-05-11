@@ -2,7 +2,7 @@
 ;; -*- lexical-binding: t; -*-
 
 ;; Adam Simpson <adam@adamsimpson.net>
-;; Version: 0.1.1
+;; Version: 0.1.2
 ;; Package-Requires: ((loop "1.4"))
 ;; Keywords: pinboard
 ;; URL: https://github.com/asimpson/pinboard-popular
