@@ -1,6 +1,16 @@
+* Pinboard popular
+
 [[https://melpa.org/#/pinboard-popular][file:https://melpa.org/packages/pinboard-popular-badge.svg]]
 [[https://stable.melpa.org/#/pinboard-popular][file:https://stable.melpa.org/packages/pinboard-popular-badge.svg]]
 
 An Emacs extension that displays the links from the [[https://pinboard.in/popular/][pinboard.in popular page]].
 
 ~M-x pinboard-popular~ to populate the minibuffer with the popular links.
+
+** Screenshots
+
+*** Vanilla Emacs
+[[https://asimpson.github.io/pinboard-popular/vanilla.png]]
+
+*** Ivy interface
+[[https://asimpson.github.io/pinboard-popular/ivy.png]]
